@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import Card from './components/Card'
+import './components/Card.scss';
 
 function App() {
-  return (
+  return  (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Card      
+      imageUrl='https://cdn.pixabay.com/photo/2016/10/30/14/39/cat-1783342_1280.jpg'
+      title='Chat'
+      secondaryText='secondary text'
+      body='Phasellus curabitur justo dictumst, eros eleifend in turpis proin potenti turpis.'
+      action1='action1'
+      subtitle='Subtitle'
+      />   
+    </div>   
   );
 }
 
